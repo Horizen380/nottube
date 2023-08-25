@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>YouTube Clone</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<header>
+<nav>
+<div class="logo">
+<img src="youtube_logo.png" alt="YouTube Logo">
+<h1>YouTube Clone</h1>
+</div>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Trending</a></li>
+<li><a href="#">Subscription</a></li>
+<li><a href="#">Library</a></li>
+<li><a href="#">History</a></li>
+</ul>
+<div class="search-bar">
+<input type="text" placeholder="Search">
+<button type="button">Search</button>
+</div>
+</nav>
+</header>
+
+<main>
+<div class="video-list">
+<div class="video">
+<div class="thumbnail">
+<img src="video_thumbnail.jpg" alt="Video Thumbnail">
+</div>
+<div class="details">
+<h2>Video Title</h2>
+<p>Video Description</p>
+</div>
+</div>
+
+<!-- Add more video elements here -->
+
+</div>
+</main>
+
+<footer>
+<p>© 2021 YouTube Clone</p>
+</footer>
+
+</body>
+
+</html>
+```
+
+CSS (style.css):
+```
+/* Add your custom styles here */
+
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: #ffffff;
+}
+
+header {
+background-color: #f00;
+padding: 10px;
+}
+
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo img {
+height: 40px;
+margin-right: 10px;
+}
+
+.logo h1 {
+color: #ffffff;
+font-size: 20px;
+}
+
+nav ul {
+list-style-type: none;
+display: flex;
+}
+
+nav ul li {
+margin-right: 10px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #ffffff;
+font-size: 14px;
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+background-color: #ffffff;
+padding: 5px;
+}
+
+.search-bar input {
+padding: 5px;
+font-size: 14px;
+border: none;
+}
+
+.search-bar button {
+padding: 5px 10px;
+background-color: #f00;
+color: #ffffff;
+border: none;
+cursor: pointer;
+}
+
+main {
+padding: 20px;
+}
+
+.video-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 20px;
+}
+
+.video {
+border: 1px solid #ccc;
+padding: 10px;
+}
+
+.video .thumbnail img {
+width: 100%;
+}
+
+.video .details h2 {
+font-size: 16px;
+margin: 5px 0;
+}
+
+.video .details p {
+font-size: 14px;
+}
